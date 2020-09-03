@@ -9,3 +9,6 @@ sh:
 
 push:
 	docker push ${name}:${tag}
+
+ls:
+	docker image ls ${name}
