@@ -1,5 +1,5 @@
 name := neosapience/datadog-agent
-tag := 7.20.2
+tag := 7.20.2-1
 
 build:
 	docker build . -t ${name}:${tag} -f docker/Dockerfile

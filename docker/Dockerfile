@@ -4,4 +4,4 @@ RUN /opt/datadog-agent/embedded/bin/pip install nvidia-ml-py3==7.352.0 \
     && rm -rf /root/.cache/pip
 
 COPY ./configs/nvml.py /etc/datadog-agent/checks.d/
-COPY ./configs/nvml.yaml.default /etc/datadog-agent/conf.d/
+COPY ./configs/nvml.yaml /etc/datadog-agent/conf.d/
