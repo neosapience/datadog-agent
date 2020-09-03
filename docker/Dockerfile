@@ -47,6 +47,8 @@ RUN apt-get update \
   && apt-mark hold libnccl2 \
   && rm -rf /var/lib/apt/lists/* # buildkit
 
+ENV PATH=/opt/datadog-agent/bin/agent/:/opt/datadog-agent/embedded/bin/:$PATH
+
 RUN /opt/datadog-agent/embedded/bin/pip install nvidia-ml-py3==7.352.0 \
     && rm -rf /root/.cache/pip
 
