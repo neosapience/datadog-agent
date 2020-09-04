@@ -1,4 +1,4 @@
-# datadog agent
+# datadog agent for gpu monitoring
 GPU monitoring for datadog
 
 ## to support nvml 
